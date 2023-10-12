@@ -1,5 +1,6 @@
 from GIT.homework.hw5.algorithms.main import found_near
 from GIT.homework.hw5.algorithms.main import count_worlds
+from GIT.homework.hw5.algorithms.main import count_worlds_2
 
 def test_found_near():
     assert 5 == found_near("3 51 8 49 -1 3 50 7 4 4 4 9 6 6 6 5\n5")
@@ -19,5 +20,7 @@ def test_count_worlds2():
 
 def test_count_worlds3():
     assert 3 == count_worlds('hello world hello universe')
-
-
+def test_count_worlds_2():
+    assert 1 == count_worlds_2('apple apple apple apple')
+def test_count_worlds_2_2():
+    assert 3 == count_worlds_2('hello world hello universe')

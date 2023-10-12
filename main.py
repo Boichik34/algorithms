@@ -25,4 +25,13 @@ def count_worlds(strinng: str) -> int:
     count = len(set(strinng.split()))
     return count
 
-print(count_worlds('wer wer wer'))
+def count_worlds_2(strr: str) -> int:
+    lst = strr.split()
+    lst_2 = []
+    for el in lst:
+        if el not in lst_2:
+            lst_2.append(el)
+    return len(lst_2)
+
+
+
